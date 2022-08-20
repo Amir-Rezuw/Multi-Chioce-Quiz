@@ -1,9 +1,13 @@
-//
-//  ScoreModel.swift
-//  Quizzler-iOS13
-//
-//  Created by AmirReza Jamali on 8/20/22.
-//  Copyright © 2022 The App Brewery. All rights reserved.
-//
-
 import Foundation
+struct ScoreModel {
+    var userScore = 0;
+    
+    mutating func updateUserScore(_ userGotItRight: Bool) -> Void {
+        if userGotItRight {
+            userScore += 1;
+        }
+    }
+    mutating func resetScore () -> Void {
+        userScore = 0;
+    }
+}
