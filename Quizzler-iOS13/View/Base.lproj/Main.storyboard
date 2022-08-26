@@ -26,25 +26,38 @@
                                 <rect key="frame" x="20" y="44" width="388" height="848"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your score is :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nj1-D5-WVV">
-                                        <rect key="frame" x="0.0" y="0.0" width="388" height="64.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="388" height="49.666666666666664"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Question Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSI-li-mhO">
-                                        <rect key="frame" x="0.0" y="74.666666666666686" width="388" height="573.33333333333326"/>
+                                        <rect key="frame" x="0.0" y="59.666666666666657" width="388" height="508.33333333333337"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="h62-q0-ipM">
-                                        <rect key="frame" x="0.0" y="658" width="388" height="190"/>
+                                        <rect key="frame" x="0.0" y="578" width="388" height="270"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="vNI-IS-dYd">
-                                                <rect key="frame" x="0.0" y="0.0" width="388" height="130"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="388" height="210"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awC-mC-Zwo">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9v4-Bm-kbd" userLabel="ChoiceA">
                                                         <rect key="frame" x="0.0" y="0.0" width="388" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="tqb-Vz-nGx"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vud-EK-DGz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awC-mC-Zwo" userLabel="ChoiceB">
+                                                        <rect key="frame" x="0.0" y="80" width="388" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="bXl-tm-A27"/>
                                                         </constraints>
@@ -56,8 +69,8 @@
                                                             <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fio-n2-AZa"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sy5-3z-gWs">
-                                                        <rect key="frame" x="0.0" y="80" width="388" height="50"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sy5-3z-gWs" userLabel="ChoiceC">
+                                                        <rect key="frame" x="0.0" y="160" width="388" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="aMH-I9-Aik"/>
                                                         </constraints>
@@ -72,7 +85,7 @@
                                                 </subviews>
                                             </stackView>
                                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TXm-qh-7Xg">
-                                                <rect key="frame" x="0.0" y="180" width="388" height="11"/>
+                                                <rect key="frame" x="0.0" y="260" width="388" height="11"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" red="0.2770131528" green="0.3800790906" blue="0.57570761439999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -104,6 +117,9 @@
                         <outlet property="questionLabel" destination="rSI-li-mhO" id="dfv-g4-Pqs"/>
                         <outlet property="scoreLabel" destination="Nj1-D5-WVV" id="sEP-Co-ghF"/>
                         <outlet property="trueButton" destination="awC-mC-Zwo" id="Bp8-Hf-m5M"/>
+                        <outletCollection property="Chioces" destination="9v4-Bm-kbd" collectionClass="NSMutableArray" id="3EW-yt-pRy"/>
+                        <outletCollection property="Chioces" destination="awC-mC-Zwo" collectionClass="NSMutableArray" id="6zp-sW-shh"/>
+                        <outletCollection property="Chioces" destination="sy5-3z-gWs" collectionClass="NSMutableArray" id="aih-EH-hrM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -9,12 +9,13 @@
 import Foundation
 
 struct Question {
-    var questionText:String
-    var  answer:String
+    var questionText: String
+    var  answer: [String]
+    var correctAnswer: String
     
-    
-    init(q:String,a:String){
+    init(q:String, a:[String], correctAnswer:String){
         questionText = q
         answer = a
+        self.correctAnswer = correctAnswer
     }
 }

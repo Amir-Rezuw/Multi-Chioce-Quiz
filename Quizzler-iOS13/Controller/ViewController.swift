@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet var Chioces: [UIButton]!
     
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
@@ -17,24 +18,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var questionLabel: UILabel!
     
-    var quizBrain = QuizBrain()
+    var quizBrain = MultiChoiceBrain()
     var scoreModel = ScoreModel()
     
-    func changeButtonStyle(_ button:UIButton){
-        button.backgroundColor = UIColor.clear
-        button.layer.cornerRadius = 20
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor.init(red: 0, green: 209, blue: 223, alpha:1).cgColor
-    }
     
+    func updateButtons () -> Void {
+        for (index, button) in Chioces.enumerated()  {
+            button.backgroundColor = UIColor.clear
+            button.layer.cornerRadius = 20
+            button.layer.borderWidth = 1
+            button.layer.borderColor = UIColor.init(red: 0, green: 209, blue: 223, alpha:1).cgColor
+            button.setTitle(quizBrain.getChioceText(index), for: .normal)
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         progressBar.progress = 0.0
         questionLabel.text = quizBrain.getQuestionText()
-        changeButtonStyle(falseButton)
-        changeButtonStyle(trueButton)
         progressBar.clipsToBounds = true
         progressBar.layer.cornerRadius = 5
+        updateButtons()
     }
     @IBAction func buttonClicked(_ sender: UIButton) {
         
@@ -61,6 +64,7 @@ class ViewController: UIViewController {
         falseButton.layer.borderColor = UIColor.init(red: 0, green: 209, blue: 223, alpha:1).cgColor
         trueButton.layer.borderColor = UIColor.init(red: 0, green: 209, blue: 223, alpha:1).cgColor
         progressBar.progress = quizBrain.getProgress()
+        updateButtons()
     }
     
 }

@@ -15,7 +15,7 @@
 		AD4BDE5622D878BC005BA4CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4BDE5422D878BC005BA4CC /* LaunchScreen.storyboard */; };
 		EF42634828ABCF7C00B8786C /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42634728ABCF7C00B8786C /* Questions.swift */; };
 		EF4E2AF628B0F039003E1D12 /* ScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E2AF528B0F039003E1D12 /* ScoreModel.swift */; };
-		EFF1469428B0E02900E2384E /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF1469328B0E02900E2384E /* QuizBrain.swift */; };
+		EFAF4A3128B88E4A0032670A /* MultipleChoiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAF4A3028B88E4A0032670A /* MultipleChoiceModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		AD4BDE5722D878BC005BA4CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF42634728ABCF7C00B8786C /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		EF4E2AF528B0F039003E1D12 /* ScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreModel.swift; sourceTree = "<group>"; };
-		EFF1469328B0E02900E2384E /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
+		EFAF4A3028B88E4A0032670A /* MultipleChoiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				EF42634728ABCF7C00B8786C /* Questions.swift */,
-				EFF1469328B0E02900E2384E /* QuizBrain.swift */,
 				EF4E2AF528B0F039003E1D12 /* ScoreModel.swift */,
+				EFAF4A3028B88E4A0032670A /* MultipleChoiceModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,8 +171,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFAF4A3128B88E4A0032670A /* MultipleChoiceModel.swift in Sources */,
 				EF4E2AF628B0F039003E1D12 /* ScoreModel.swift in Sources */,
-				EFF1469428B0E02900E2384E /* QuizBrain.swift in Sources */,
 				AD4BDE4E22D878BA005BA4CC /* ViewController.swift in Sources */,
 				EF42634828ABCF7C00B8786C /* Questions.swift in Sources */,
 				AD4BDE4A22D878BA005BA4CC /* AppDelegate.swift in Sources */,
